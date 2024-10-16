@@ -32,10 +32,13 @@ export const FloatingNav: React.FC<FloatingNavProps> = ({
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is a number
     if (typeof current === "number") {
-      let direction = current - scrollYProgress.getPrevious();
+      const previous = scrollYProgress.getPrevious();
+
+      // Ensure previous value is a number
+      const direction = typeof previous === "number" ? current - previous : 0;
 
       if (scrollYProgress.get() < 0.05) {
-        // also set true for the initial state
+        // Also set true for the initial state
         setVisible(true);
       } else {
         if (direction < 0) {
