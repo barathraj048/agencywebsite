@@ -12,9 +12,11 @@ import { leftLists, rightLists } from "./list";
 export const BentoGrid = ({
   className,
   children,
+  info,
 }: {
   className?: string;
   children?: React.ReactNode;
+  info?: any;
 }) => {
   return (
     <div
@@ -50,7 +52,7 @@ export const BentoGridItem = ({
   imgClassName?: string;
   titleClassName?: string;
   spareImg?: string;
-  info?: string[];
+  info?: any;
   specalimg?: string;
 }) => {
   const [copied, setCopied] = useState(false);
@@ -140,7 +142,7 @@ export const BentoGridItem = ({
             <div className="relative">
               <div className="flex flex-col space-y-2 mt-4">
                 {info &&
-                  info.map((item, index) => (
+                  info.map((item: any, index: any) => (
                     <span
                       className="bgcard lg:px-4 lg:py-2 px-3 py-1.5 top rounded-3xl"
                       key={index}
