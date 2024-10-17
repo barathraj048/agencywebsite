@@ -11,7 +11,7 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "./b1.svg",
     spareImg: "",
     info: "",
   },
@@ -38,7 +38,7 @@ export const gridItems = [
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
-    img: "/grid.svg",
+    img: "./grid.svg",
     spareImg: "",
     info: "",
   },
@@ -81,40 +81,40 @@ export const workExperience = [
     title: " Web-Site VTK Travels",
     desc: "Our team has Designed  & Developed a website for the VTK Travels landing page.",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: "./exp1.svg",
   },
   {
     id: 2,
     title: "Mobile App Dev - JSM Tech",
     desc: "Created a Summer Class Ad for vilvam yogasala. 1min Ad for Instagram.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/video (2).png",
+    thumbnail: "./video (2).png",
   },
   {
     id: 3,
     title: "Landing page -Apple Iphone",
     desc: "Our team has developed a replica of Apple's million-dollar page to Showcase their ability.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/Frame 5.png",
+    thumbnail: "./Frame 5.png",
   },
   {
     id: 4,
     title: "Web Application -Aitbnb",
     desc: "Another Million dollar Complex Web Application Developed By Our For Showcase.",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "./exp4.svg",
   },
 ];
 
 export const socialMedia = [
   {
     id: 1,
-    img: "/instagram-logo.png",
+    img: "./instagram-logo.png",
     link: "https://www.instagram.com/ravancreatives/",
   },
   {
     id: 2,
-    img: "/link.svg",
+    img: "./link.svg",
     link: "https://www.linkedin.com/in/ravan-creations/",
   },
 ];
