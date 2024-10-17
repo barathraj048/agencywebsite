@@ -8,7 +8,7 @@ function Prevname() {
       Details:
         "This is real World Web-site that build for Vtk-Travels By Our Team. Before Production Our Team conducted an research as a result competators website look outdated so we empowerd morden 3d parallax effect that Capture Attention of visiters",
       TechnologyUsed: "React,Tailwind,node,express & More",
-      img: "/vtk.png",
+      img: "./vtk.png",
       Link: "",
       className: "",
     },
@@ -18,7 +18,7 @@ function Prevname() {
       Details:
         "our exact replica of the iPhone 15 landing page project! This showcases our team's exceptional development skills and our capability to create millions of doller landing page. Partner with us to achieve stunning, high-performance web pages that drive engagement ",
       TechnologyUsed: "React,Tailwind,three,gsap & More",
-      img: "/iphonecard.png",
+      img: "./iphonecard.png",
       Link: "",
       className: "",
     },
@@ -28,7 +28,7 @@ function Prevname() {
       Details:
         'To Expand,show & Test Our Technical Team,Our team made a simple prototype model of another million doller Web-Application that have really complex backend-task and integration of multiple Api"s.Simply more Complex E-commerse Mordel',
       TechnologyUsed: "React,Tailwind,node,express,cors & More",
-      img: "/airbnb (2).png",
+      img: "./airbnb (2).png",
       Link: "",
       className: "",
     },
