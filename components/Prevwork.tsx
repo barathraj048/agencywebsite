@@ -36,11 +36,11 @@ function Prevname() {
   return (
     <div
       id="Recent-projects"
-      className="h-fit  flex flex-col antialiased bg-[#313237] dark:bg-[#0C0E23] mb-8 mt-8 rounded-3xl items-center justify-center "
+      className="overflow-hidden h-fit flex flex-col antialiased bg-[#313237] dark:bg-[#0C0E23] mb-4 sm:mb-6 mt-4 sm:mt-6 rounded-3xl items-center justify-center px-4"
     >
-      <h1 className="text-3xl sm:text-2xl md:text-4xl lg:text-5xl inline-flex ibm-plex-mono-bold gap-4 mt-10 sm:mt-16 md:mt-20 lg:mt-24 rounded-3xl whitespace-nowrap">
+      <h1 className="text-sm sm:text-3xl md:text-4xl lg:text-5xl inline-flex ibm-plex-mono-bold gap-2 sm:gap-4 mt-6 sm:mt-10 md:mt-16 lg:mt-20 rounded-3xl whitespace-nowrap text-center">
         A small selection of
-        <p className="text-[#CBACF9] text-2xl sm:text-2xl md:text-4xl lg:text-5xl inline">
+        <p className="text-[#CBACF9] text-sm sm:text-2xl md:text-4xl lg:text-5xl inline">
           recent projects
         </p>
       </h1>
@@ -49,7 +49,7 @@ function Prevname() {
         items={product}
         direction="right"
         speed="slow"
-        className="rounded-3xl mt-8 -mb-4"
+        className="rounded-3xl mt-4 sm:mt-8 mb-2 sm:mb-4"
       />
     </div>
   );

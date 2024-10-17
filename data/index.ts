@@ -1,3 +1,5 @@
+import { link } from "fs";
+
 export const navItems = [];
 
 export const gridItems = [
@@ -52,16 +54,23 @@ export const testimonials = [
   },
   {
     quote:
-      "For the short film 'ILLUSION', working with Ravan was an absolute pleasure. Their energy and team spirit were incredible, making it feel like we were all part of one unified team, not just another agency contract. They went above and beyond to ensure I was satisfied, embracing my feedback and working hard to address any critiques. If you're looking for a team that values collaboration, operates without ego, and truly cares about your project, I highly recommend Ravan.",
-    name: "Nagaraj",
-    title: "Director of ILLUTION & Board Member @ Visual Impact Studios",
+      "The Best Experience Ever! Hi, I'm Akilandeshwari. We collaborated with Ravan for an advertisement video, and I had a wonderful experience with them. Their team is young, enthusiastic, and truly passionate about what they do. They were incredibly kind and always reachable, which made the process so much smoother. Their energy throughout the project was contagious and motivated me to give even more to the project. ",
+    name: "Akilandeshwari",
+    title: "Founder Of Vilvam Yogasala",
     img: "",
   },
   {
     quote:
-      "The Best Experience Ever! Hi, I'm Akilandeshwari. We collaborated with Ravan for an advertisement video, and I had a wonderful experience with them. Their team is young, enthusiastic, and truly passionate about what they do. They were incredibly kind and always reachable, which made the process so much smoother. Their energy throughout the project was contagious and motivated me to give even more to the project. ",
-    name: "Akilandeshwari",
-    title: "Founder Of Vilvam Yogasala",
+      "Working with Ravan Creatives was like riding a rollercoaster—fast, fun, and full of surprises! They came in with endless energy and overdelivered every time. We asked for good service, and they gave us a blockbuster experience. Three events in a row, and they only got better! If you want a team that’s fun, dedicated, and always pushing the limits, Ravan Creatives is it!",
+    name: "Aravind",
+    title: "Lead Cinimotograper @ C41",
+    img: "",
+  },
+  {
+    quote:
+      "For the short film 'ILLUSION', working with Ravan was an absolute pleasure. Their energy and team spirit were incredible, making it feel like we were all part of one unified team, not just another agency contract. They went above and beyond to ensure I was satisfied, embracing my feedback and working hard to address any critiques. If you're looking for a team that values collaboration, operates without ego, and truly cares about your project, I highly recommend Ravan.",
+    name: "Nagaraj",
+    title: "Director of ILLUTION & Board Member @ Visual Impact Studios",
     img: "",
   },
 ];
@@ -101,9 +110,11 @@ export const socialMedia = [
   {
     id: 1,
     img: "/instagram-logo.png",
+    link: "https://www.instagram.com/ravancreatives/",
   },
   {
     id: 2,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/ravan-creations/",
   },
 ];

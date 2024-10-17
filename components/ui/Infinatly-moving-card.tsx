@@ -83,14 +83,14 @@ const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20 max-w-7xl [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "overflow-hidden  scroller relative z-20 max-w-7xl [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
         className
       )}
     >
       <ul
         ref={scrollerRef}
         className={cn(
-          "relative flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap z-30",
+          "relative flex  min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap z-30",
           start && "animate-scroll",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
@@ -115,7 +115,7 @@ const InfiniteMovingCards = ({
                   className="object-cover object-center w-full h-full"
                 />
               </div>
-              <span className="relative z-20 font-bold leading-[1.6] text-xl bg-gradient-to-r from-slate-500 to-blue-200 bg-clip-text text-transparent">
+              <span className="relative z-20 font-bold leading-[1.6] text-xl  bg-gradient-to-r from-slate-500 to-blue-200 bg-clip-text text-transparent">
                 {item.projectType}
               </span>
               <img
@@ -149,18 +149,3 @@ const InfiniteMovingCards = ({
 };
 
 export default InfiniteMovingCards;
-
-{
-  /* // after item.ProjectName span */
-}
-
-//   <button className="text-md font-bold w-full mt-4 gap-2 flex items-center justify-center border border-gray-600 rounded-xl
-//   hover:ring-2 hover:ring-gray-600 hover:ring-opacity-50"
-//   onClick={() => setClick(!click)}
-// >
-//   <span className="my-2.5 bg-gradient-to-r from-slate-600 to-neutral-200 bg-clip-text text-transparent">
-//     {click ? 'Show Less' : 'More Details'}
-//   </span>
-
-//   <ArrowForwardIcon className={`ml-2 text-lg ${click ? 'rotate-90' : 'rotate-0'}`} />
-// </button>

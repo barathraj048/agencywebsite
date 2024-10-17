@@ -17,7 +17,7 @@ function Hero() {
         />
         <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
       </div>
-      <div className="min-h-screen w-full -my-20 dark:bg-black-100 bg-white dark:bg-grid-white/[0.04] bg-grid-black/[0.08] relative flex items-center justify-center">
+      <div className="min-h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.04] bg-grid-black/[0.08] relative flex items-center justify-center">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         <div className="ibm-plex-mono-light flex flex-col items-center justify-center text-center px-4">
           {/* Small adjustments for mobile screens */}
@@ -27,13 +27,13 @@ function Hero() {
               <span className="inline text-purple">. not service</span>
             </h2>
           </div>
-          <div className="my-4 md:mt-6 lg:mt-8">
+          <div className="my-4 md:mt-6 mt-6 lg:mt-8">
             <TextGenerateEffect
               words="Maximize Your Sales by Powerful Online Presence through Us"
               className="text-lg sm:text-sm md:text-3xl lg:text-5xl"
             />
           </div>
-          <div className="mt-2 sm:mt-4 md:mt-6 lg:mt-8">
+          <div className="mt-4 sm:mt-4 md:mt-6 lg:mt-8">
             <h3 className="ibm-plex-mono-bold text-xs sm:text-sm md:text-base lg:text-lg uppercase text-[#535562]">
               Offers based on your true need!!!
             </h3>

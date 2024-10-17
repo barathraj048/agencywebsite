@@ -159,12 +159,12 @@ export const BentoGridItem = ({
           {id === 3 && (
             <div className="flex lg:gap-2 w-fit absolute -right-3 lg:-right-2 overflow-hidden">
               {/* Left List */}
-              <div className="flex flex-col gap-4 md:gap-3 lg:gap-2 animate-left-marquee animate-left">
+              <div className="flex flex-col gap-2 md:gap-3 lg:gap-2 animate-left-marquee animate-left">
                 {/* Map through leftLists with a key */}
                 {leftLists.map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-6 sm:py-6 sm:gap-8 lg:px-3 py-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="lg:py-6 sm:py-4 py-5 sm:gap-8 lg:px-3 sm:px-6 px-4 sm:mx-0 mx-1 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
                   </span>
@@ -172,12 +172,12 @@ export const BentoGridItem = ({
               </div>
 
               {/* Right List */}
-              <div className="flex flex-col gap-4 md:gap-3 lg:gap-2 animate-right-marquee animate-right">
+              <div className="flex flex-col gap-2 md:gap-3 lg:gap-2 animate-right-marquee animate-right">
                 {/* Map through rightLists with a key */}
                 {rightLists.map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-6 sm:py-6 sm:gap-8 lg:px-3 py-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="lg:py-6 sm:py-4 py-5 sm:gap-8 lg:px-3 sm:px-6 px-4 sm:mx-0 mx-1 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
                   </span>

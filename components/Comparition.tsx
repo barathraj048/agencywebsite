@@ -7,7 +7,7 @@ function Comparison() {
     "Website videos",
     "Total cost",
     "Your time",
-    "Status tracking",
+    "Proj tracking",
   ];
 
   const ravanValues = [

@@ -1,11 +1,15 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
-    "skipLibCheck": true,              // Skips type checking of declaration files
-    "strict": false,                   // Disables strict mode (less strict type checks)
-    "noImplicitAny": false,            // Allows variables to have an `any` type
-    "noImplicitReturns": false,        // Allows functions without explicit return types
+    "skipLibCheck": true, // Skips type checking of declaration files
+    "strict": false, // Disables strict mode (less strict type checks)
+    "noImplicitAny": false, // Allows variables to have an `any` type
+    "noImplicitReturns": false, // Allows functions without explicit return types
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
@@ -13,16 +17,25 @@
     "resolveJsonModule": true,
     "jsx": "preserve",
     "incremental": true,
-    "isolatedModules": false,          // Disable module boundary checks
+    "isolatedModules": true, // Disable module boundary checks
     "plugins": [
       {
         "name": "next"
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": [
+        "./*"
+      ]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
