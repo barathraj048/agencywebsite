@@ -8,7 +8,8 @@ import {
 } from "framer-motion";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import weblogo from "@/public/webmain.jpg";
+import weblogo from "@/public/logo.svg";
+import { navbarItem } from "@/data/index";
 
 interface NavItem {
   link: string;
@@ -75,13 +76,29 @@ export const FloatingNav: React.FC<FloatingNavProps> = ({
           border: "1px solid rgba(255, 255, 255, 0.125)",
         }}
       >
-        <Link href="/">
-          <img
-            src={weblogo.src}
-            className="h-18 w-40 ml-2 my-1 rounded-md"
-            alt="Icon"
-          />
-        </Link>
+        <div className="mx-4  flex items-center justify-between min-w-full gap-48">
+          <Link href="/">
+            <img
+              src={weblogo.src}
+              className="h-18 w-40 ml-2 my-1 rounded-md"
+              alt="Icon"
+            />
+          </Link>
+          <div className="flex space-x-4">
+            {navbarItem.map((item) => {
+              return (
+                <div key={item.id} className="flex items-center">
+                  <Link
+                    href={item.location}
+                    className={`nav-Item ${item.style}`}
+                  >
+                    {item.item}
+                  </Link>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </motion.div>
     </AnimatePresence>
   );

@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 @layer base {
   :root {
@@ -87,18 +86,18 @@
   }
 }
 
-
 @keyframes left-marquee {
   0% {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(calc(-100% + 3.5rem)); /* Adjust according to item height */
+    transform: translateY(
+      calc(-100% + 3.5rem)
+    ); /* Adjust according to item height */
   }
 }
-.bgcard{
-background-color : rgba(17, 20, 43, 0.4);
-
+.bgcard {
+  background-color: rgba(17, 20, 43, 0.4);
 }
 
 @keyframes right-marquee {
@@ -106,7 +105,9 @@ background-color : rgba(17, 20, 43, 0.4);
     transform: translateY(0);
   }
   100% {
-    transform: translateY(calc(100% - 3.5rem)); /* Adjust according to item height */
+    transform: translateY(
+      calc(100% - 3.5rem)
+    ); /* Adjust according to item height */
   }
 }
 
@@ -118,104 +119,102 @@ background-color : rgba(17, 20, 43, 0.4);
   animation: right-marquee 700s linear infinite;
 }
 
-
-.top{
+.top {
   z-index: 100;
 }
 .ibm-plex-mono-thin {
-   font-family: "IBM Plex Mono", monospace;
-   font-weight: 100;
-   font-style: normal;
- }
- 
- .ibm-plex-mono-extralight {
-   font-family: "IBM Plex Mono", monospace;
-   font-weight: 200;
-   font-style: normal;
- }
- 
- .ibm-plex-mono-light {
-   font-family: "IBM Plex Mono", monospace;
-   font-weight: 300;
-   font-style: normal;
- }
- 
- .ibm-plex-mono-regular {
-   font-family: "IBM Plex Mono", monospace;
-   font-weight: 400;
-   font-style: normal;
- }
- 
- .ibm-plex-mono-medium {
-   font-family: "IBM Plex Mono", monospace;
-   font-weight: 500;
-   font-style: normal;
- }
- 
- .ibm-plex-mono-semibold {
-   font-family: "IBM Plex Mono", monospace;
-   font-weight: 600;
-   font-style: normal;
- }
- 
- .ibm-plex-mono-bold {
-   font-family: "IBM Plex Mono", monospace;
-   font-weight: 700;
-   font-style: normal;
- }
- 
- .ibm-plex-mono-thin-italic {
-   font-family: "IBM Plex Mono", monospace;
-   font-weight: 100;
-   font-style: italic;
- }
- 
- .ibm-plex-mono-extralight-italic {
-   font-family: "IBM Plex Mono", monospace;
-   font-weight: 200;
-   font-style: italic;
- }
- 
- .ibm-plex-mono-light-italic {
-   font-family: "IBM Plex Mono", monospace;
-   font-weight: 300;
-   font-style: italic;
- }
- 
- .ibm-plex-mono-regular-italic {
-   font-family: "IBM Plex Mono", monospace;
-   font-weight: 400;
-   font-style: italic;
- }
- 
- .ibm-plex-mono-medium-italic {
-   font-family: "IBM Plex Mono", monospace;
-   font-weight: 500;
-   font-style: italic;
- }
- 
- .ibm-plex-mono-semibold-italic {
-   font-family: "IBM Plex Mono", monospace;
-   font-weight: 600;
-   font-style: italic;
- }
- 
- .ibm-plex-mono-bold-italic {
-   font-family: "IBM Plex Mono", monospace;
-   font-weight: 700;
-   font-style: italic;
- }
- 
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.ibm-plex-mono-extralight {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.ibm-plex-mono-light {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ibm-plex-mono-regular {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ibm-plex-mono-medium {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ibm-plex-mono-semibold {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.ibm-plex-mono-bold {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ibm-plex-mono-thin-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.ibm-plex-mono-extralight-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.ibm-plex-mono-light-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ibm-plex-mono-regular-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ibm-plex-mono-medium-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ibm-plex-mono-semibold-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.ibm-plex-mono-bold-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
 
 .inverted-component {
-   transform: scaleY(-1);  
-   transform: scaleX(-1); /* Example: Flip component vertically */
- }
+  transform: scaleY(-1);
+  transform: scaleX(-1); /* Example: Flip component vertically */
+}
 
- .default{
-   font-family: 'ibm-plex-mono-bold';
- }
- .transition {
+.default {
+  font-family: "ibm-plex-mono-bold";
+}
+.transition {
   transition: transform 500ms ease-in-out;
 }
 .rotate-0 {
@@ -223,4 +222,7 @@ background-color : rgba(17, 20, 43, 0.4);
 }
 .rotate-90 {
   transform: rotate(90deg);
+}
+.nav-Item {
+  @apply text-[14px] font-semibold px-6 py-4 flex transition-all duration-300 ease-in-out hover:font-bold;
 }

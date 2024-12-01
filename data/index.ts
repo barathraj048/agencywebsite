@@ -132,3 +132,32 @@ export const socialMedia = [
     link: "https://www.linkedin.com/in/ravan-creations/",
   },
 ];
+
+export const navbarItem = [
+  {
+    id: 1,
+    item: "Home",
+    location: "",
+  },
+  {
+    id: 2,
+    item: "Testimonials",
+    location: "",
+  },
+  {
+    id: 3,
+    item: "Service",
+    location: "",
+  },
+  {
+    id: 4,
+    item: "contact",
+    location: "",
+  },
+  {
+    id: 5,
+    item: "Why Us",
+    location: "",
+    style: "mr-4",
+  },
+];

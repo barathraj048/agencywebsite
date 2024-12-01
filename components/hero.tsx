@@ -2,6 +2,9 @@ import React from "react";
 import { Spotlight } from "./ui/Sportlight"; // Adjust import path as needed
 import TextGenerateEffect from "@/components/ui/TextgenerateEffect"; // Adjust import path as needed
 import MagicButton from "./ui/Magicbutton";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ReactLenis } from "lenis/react";
 
 function Hero() {
   return (
