@@ -107,7 +107,7 @@ const InfiniteMovingCards = ({
             <blockquote>
               <div
                 aria-hidden="true"
-                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
+                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 w-[calc(100%_+_4px)]"
               >
                 <img
                   src={bgimg.src}

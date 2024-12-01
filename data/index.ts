@@ -104,6 +104,20 @@ export const workExperience = [
     className: "md:col-span-2",
     thumbnail: "./exp4.svg",
   },
+  {
+    id: 5,
+    title: "Short Filim",
+    desc: "Another Million dollar Complex Web Application Developed By Our For Showcase.",
+    className: "md:col-span-2",
+    thumbnail: "/exp4.svg",
+  },
+  {
+    id: 4,
+    title: "Web Application -Aitbnb",
+    desc: "Another Million dollar Complex Web Application Developed By Our For Showcase.",
+    className: "md:col-span-2",
+    thumbnail: "/exp4.svg",
+  },
 ];
 
 export const socialMedia = [
