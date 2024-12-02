@@ -26,47 +26,25 @@ export const FloatingNav: React.FC<FloatingNavProps> = ({
   className,
 }) => {
   const { scrollYProgress } = useScroll();
-
-  // set true for the initial state so that nav bar is visible in the hero section
   const [visible, setVisible] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false); // Toggle for mobile menu
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
-    // Check if current is a number
     if (typeof current === "number") {
       const previous = scrollYProgress.getPrevious();
-
-      // Ensure previous value is a number
       const direction = typeof previous === "number" ? current - previous : 0;
-
-      if (scrollYProgress.get() < 0.05) {
-        // Also set true for the initial state
-        setVisible(true);
-      } else {
-        if (direction < 0) {
-          setVisible(true);
-        } else {
-          setVisible(false);
-        }
-      }
+      setVisible(scrollYProgress.get() < 0.05 || direction < 0);
     }
   });
 
   return (
     <AnimatePresence mode="wait">
       <motion.div
-        initial={{
-          opacity: 1,
-          y: -100,
-        }}
-        animate={{
-          y: visible ? 0 : -100,
-          opacity: visible ? 1 : 0,
-        }}
-        transition={{
-          duration: 0.2,
-        }}
+        initial={{ opacity: 1, y: -100 }}
+        animate={{ y: visible ? 0 : -100, opacity: visible ? 1 : 0 }}
+        transition={{ duration: 0.2 }}
         className={cn(
-          "flex w-fit md:min-w-fit rounded-md -mt-8 lg:min-w-fit fixed z-[5000] top-10 inset-x-0 mx-auto px-2 py-1  border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] ",
+          "flex w-fit md:min-w-fit rounded-md -mt-8 lg:min-w-fit fixed z-[5000] top-10 inset-x-0 mx-auto px-2 py-1 border border-black/.1 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]",
           className
         )}
         style={{
@@ -76,7 +54,7 @@ export const FloatingNav: React.FC<FloatingNavProps> = ({
           border: "1px solid rgba(255, 255, 255, 0.125)",
         }}
       >
-        <div className="mx-4  flex items-center justify-between min-w-full gap-48">
+        <div className="mx-4 flex items-center justify-between min-w-full gap-48">
           <Link href="/">
             <img
               src={weblogo.src}
@@ -84,21 +62,56 @@ export const FloatingNav: React.FC<FloatingNavProps> = ({
               alt="Icon"
             />
           </Link>
-          <div className="flex space-x-4">
-            {navbarItem.map((item) => {
-              return (
-                <div key={item.id} className="flex items-center">
-                  <Link
-                    href={item.location}
-                    className={`nav-Item ${item.style}`}
-                  >
-                    {item.item}
-                  </Link>
-                </div>
-              );
-            })}
+
+          {/* Mobile Menu Button */}
+          <button
+            className="lg:hidden text-white text-2xl pr-10"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            ☰
+          </button>
+
+          {/* Desktop Menu */}
+          <div className="hidden lg:flex space-x-4">
+            {navbarItem.map((item) => (
+              <Link
+                key={item.id}
+                href={item.location}
+                className={`nav-Item ${item.style}`}
+              >
+                {item.item}
+              </Link>
+            ))}
           </div>
         </div>
+
+        {/* Mobile Popup Menu */}
+        {menuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className="absolute top-full right-0 mt-2 w-full rounded-md shadow-lg bg-opacity-90 lg:hidden"
+            style={{
+              backdropFilter: "blur(16px) saturate(180%)",
+              backgroundColor: "rgba(17, 25, 40, 0.75)",
+              border: "1px solid rgba(255, 255, 255, 0.125)",
+            }}
+          >
+            <div className="flex flex-col p-4 space-y-2">
+              {navbarItem.map((item) => (
+                <Link
+                  key={item.id}
+                  href={item.location}
+                  className={`nav-Item ${item.style}`}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {item.item}
+                </Link>
+              ))}
+            </div>
+          </motion.div>
+        )}
       </motion.div>
     </AnimatePresence>
   );

@@ -6,7 +6,10 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ReactLenis } from "lenis/react";
 
+gsap.registerPlugin(ScrollTrigger);
+
 function Hero() {
+  
   return (
     <div>
       <div>

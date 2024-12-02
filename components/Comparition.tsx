@@ -52,7 +52,7 @@ function Comparison() {
         <h2 className="flex justify-center items-center text-xs sm:text-[10px] md:text-base lg:text-lg font-bold text-[#535562] uppercase mt-2">
           Let’s make a quick comparison!!
         </h2>
-        <div className="grid grid-cols-3 md:grid-cols-3 gap-4 p-3 sm:p-2 md:p-6 lg:p-8 rounded-xl">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-3 sm:p-2 md:p-6 lg:p-8 rounded-xl">
           {/* Parameters */}
           <div className="col-span-1 bg-[#11142B] bg-opacity-70 flex flex-col items-center justify-center w-full h-full rounded-3xl p-3 sm:p-2 md:p-6 lg:p-8">
             <h4 className="text-xs sm:text-sm md:text-2xl lg:text-3xl mb-2 sm:mb-2 md:mb-6 lg:mb-8 font-bold text-white">
