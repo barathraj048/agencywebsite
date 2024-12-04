@@ -54,7 +54,7 @@ export const FloatingNav: React.FC<FloatingNavProps> = ({
           border: "1px solid rgba(255, 255, 255, 0.125)",
         }}
       >
-        <div className="mx-4 flex items-center justify-between min-w-full gap-48">
+        <div className="mx-4 flex items-center justify-between min-w-full gap-48 pr-10">
           <Link href="/">
             <img
               src={weblogo.src}

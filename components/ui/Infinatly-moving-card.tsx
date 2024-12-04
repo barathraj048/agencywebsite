@@ -135,8 +135,8 @@ const InfiniteMovingCards = ({
                     Technology Used <br />
                     {item.TechnologyUsed}
                   </span>
-                  <span className="text-sm leading-[1.6] text-gray-400 font-normal">
-                    {item.Link}
+                  <span className="text-sm leading-[1.6] text-gray mt-4 font-semibold bg-gradient-to-r from-purple to-indigo-300 bg-clip-text text-transparent">
+                    Click Hear To See...{item.Link}
                   </span>
                 </span>
               </div>

@@ -10,6 +10,7 @@ import Experience from "@/components/Experience";
 import PrevWork from "@/components/Prevwork";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import Comparition from "@/components/Comparition";
+import ClientLogo from "@/components/ClientLogo";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <div className="max-w-7xl w-full">
         <FloatingNav navItems={navItems} />
         <Hero />
+        <ClientLogo />
         <Grid />
         <PrevWork />
         <Comparition />
