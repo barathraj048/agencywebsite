@@ -39,7 +39,7 @@ function Prevname() {
         "A debut director’s first masterpiece is a reflection of their journey—a raw and passionate endeavor, crafted through sheer determination. With limited resources but boundless creativity, the director pushes the boundaries of storytelling to bring their vision to life, defying all odds.",
       TechnologyUsed:
         "Sony Alpha, Adobe Creative Cloud, DJI Ronin gimbal, and other essential equipment",
-      img: "/airbnb (2).png",
+      img: "./illution.png",
       Link: "",
       className: "",
     },
@@ -49,7 +49,7 @@ function Prevname() {
       Details:
         'To Expand,show & Test Our Technical Team,Our team made a simple prototype model of another million doller Web-Application that have really complex backend-task and integration of multiple Api"s.Simply more Complex E-commerse Mordel',
       TechnologyUsed: "React,Tailwind,node,express,cors & More",
-      img: "/airbnb (2).png",
+      img: "./coolie.png",
       Link: "",
       className: "",
     },

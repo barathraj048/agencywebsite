@@ -7,7 +7,7 @@ const Magicbutton: React.FC = () => {
   const [hover, sethover] = useState<boolean>(false);
 
   const scrollTo = () => {
-    scroll.scrollTo(600);
+    scroll.scrollTo(700);
   };
 
   return (

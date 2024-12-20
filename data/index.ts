@@ -149,7 +149,7 @@ export const navbarItem = [
   {
     id: 3,
     item: "Service",
-    location: "#Recent-projects",
+    location: "#about",
     scrool: 600,
   },
   {
