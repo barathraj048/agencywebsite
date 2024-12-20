@@ -137,27 +137,32 @@ export const navbarItem = [
   {
     id: 1,
     item: "Home",
-    location: "",
+    location: "#hero",
+    scrool: 600,
   },
   {
     id: 2,
     item: "Testimonials",
-    location: "",
+    location: "#testimonials",
+    scrool: 600,
   },
   {
     id: 3,
     item: "Service",
-    location: "",
+    location: "#Recent-projects",
+    scrool: 600,
   },
   {
     id: 4,
     item: "contact",
-    location: "",
+    location: "#contact",
+    scrool: 600,
   },
   {
     id: 5,
     item: "Why Us",
-    location: "",
+    location: "#whyus",
     style: "mr-4",
+    scrool: 600,
   },
 ];

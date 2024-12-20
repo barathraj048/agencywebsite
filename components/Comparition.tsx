@@ -29,7 +29,10 @@ function Comparison() {
   ];
 
   const renderCard = (title: any, values: any) => (
-    <div className="col-span-1 bg-[#11142B] bg-opacity-70 rounded-3xl flex flex-col items-center justify-center text-center p-3 sm:p-2 md:p-6 lg:p-8">
+    <div
+      id="whyus"
+      className="col-span-1 bg-[#11142B] bg-opacity-70 rounded-3xl flex flex-col items-center justify-center text-center p-3 sm:p-2 md:p-6 lg:p-8"
+    >
       <h4 className="text-xs sm:text-sm md:text-2xl lg:text-3xl mb-2 sm:mb-2 md:mb-6 lg:mb-8 font-bold text-white">
         {title}
       </h4>
