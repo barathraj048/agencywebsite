@@ -6,7 +6,7 @@ function Prevname() {
       projectType: "Web site",
       ProjectName: "VKM -Travels",
       Details:
-        "This is real World Web-site that build for Vtk-Travels By Our Team. Before Production Our Team conducted an research as a result competators website look outdated so we empowerd morden 3d parallax effect that Capture Attention of visiters",
+        "This is real World Web-site that build for Vkm-Travels By Our Team. Before Production Our Team conducted an research as a result competators website look outdated so we empowerd morden 3d parallax effect that Capture Attention of visiters",
       TechnologyUsed: "React,Tailwind,node,express & More",
       img: "./vtk.png",
       Link: "",
@@ -33,10 +33,10 @@ function Prevname() {
       className: "",
     },
     {
-      projectType: "Short Filim",
+      projectType: "Short Film",
       ProjectName: "Illution",
       Details:
-        "A debut director’s first masterpiece is a reflection of their journey—a raw and passionate endeavor, crafted through sheer determination. With limited resources but boundless creativity, the director pushes the boundaries of storytelling to bring their vision to life, defying all odds.",
+        "*Coolie* is not just a film—it’s a high-octane spectacle of grit, deception, and survival. A raw, unfiltered dive into the ruthless world of drug smuggling, where every choice is a matter of life and death. Fueled by electrifying action and gripping storytelling, *Coolie* shatters boundaries, delivering an adrenaline rush that lingers long after the credits roll. This isn’t just cinema—it’s a warzone, where only the ruthless survive.",
       TechnologyUsed:
         "Sony Alpha, Adobe Creative Cloud, DJI Ronin gimbal, and other essential equipment",
       img: "./illution.png",
@@ -44,11 +44,12 @@ function Prevname() {
       className: "",
     },
     {
-      projectType: "Filim Promotion",
+      projectType: "Film Promotion",
       ProjectName: "Promotional Video For Coolie",
       Details:
         'To Expand,show & Test Our Technical Team,Our team made a simple prototype model of another million doller Web-Application that have really complex backend-task and integration of multiple Api"s.Simply more Complex E-commerse Mordel',
-      TechnologyUsed: "React,Tailwind,node,express,cors & More",
+      TechnologyUsed:
+        "Sony Alpha, Adobe Creative Cloud, DJI Ronin gimbal, and other essential equipmen",
       img: "./coolie.png",
       Link: "",
       className: "",

@@ -106,7 +106,7 @@ export const workExperience = [
   },
   {
     id: 5,
-    title: "Short Filim",
+    title: "Short Film",
     desc: "Another Million dollar Complex Web Application Developed By Our For Showcase.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
