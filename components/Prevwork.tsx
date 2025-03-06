@@ -34,7 +34,7 @@ function Prevname() {
     },
     {
       projectType: "Short Film",
-      ProjectName: "Illution",
+      ProjectName: "Illusion",
       Details:
         "A debut director’s first masterpiece is a reflection of their journey—a raw and passionate endeavor, crafted through sheer determination. With limited resources but boundless creativity, the director pushes the boundaries of storytelling to bring their vision to life, defying all odds.",
       TechnologyUsed:
