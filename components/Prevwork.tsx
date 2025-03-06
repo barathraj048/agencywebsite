@@ -36,7 +36,7 @@ function Prevname() {
       projectType: "Short Film",
       ProjectName: "Illution",
       Details:
-        "*Coolie* is not just a film—it’s a high-octane spectacle of grit, deception, and survival. A raw, unfiltered dive into the ruthless world of drug smuggling, where every choice is a matter of life and death. Fueled by electrifying action and gripping storytelling, *Coolie* shatters boundaries, delivering an adrenaline rush that lingers long after the credits roll. This isn’t just cinema—it’s a warzone, where only the ruthless survive.",
+        "A debut director’s first masterpiece is a reflection of their journey—a raw and passionate endeavor, crafted through sheer determination. With limited resources but boundless creativity, the director pushes the boundaries of storytelling to bring their vision to life, defying all odds.",
       TechnologyUsed:
         "Sony Alpha, Adobe Creative Cloud, DJI Ronin gimbal, and other essential equipment",
       img: "./illution.png",
@@ -47,7 +47,7 @@ function Prevname() {
       projectType: "Film Promotion",
       ProjectName: "Promotional Video For Coolie",
       Details:
-        'To Expand,show & Test Our Technical Team,Our team made a simple prototype model of another million doller Web-Application that have really complex backend-task and integration of multiple Api"s.Simply more Complex E-commerse Mordel',
+        "*Coolie* is not just a film—it’s a high-octane spectacle of grit, deception, and survival. A raw, unfiltered dive into the ruthless world of drug smuggling, where every choice is a matter of life and death. Fueled by electrifying action and gripping storytelling, *Coolie* shatters boundaries, delivering an adrenaline rush that lingers long after the credits roll. This isn’t just cinema—it’s a warzone, where only the ruthless survive.",
       TechnologyUsed:
         "Sony Alpha, Adobe Creative Cloud, DJI Ronin gimbal, and other essential equipmen",
       img: "./coolie.png",
