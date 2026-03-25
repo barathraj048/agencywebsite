@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { IoManSharp } from "react-icons/io5";
-import Lottie from "react-lottie";
+// import Lottie from "react-lottie";
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "@/components/ui/GradientBg";
 import GridGlobe from "./GridGlobe";
@@ -198,7 +198,7 @@ export const BentoGridItem = ({
                 }`}
               >
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie options={defaultOptions} height={100} width={200} />
+                {/* <Lottie options={defaultOptions} height={100} width={200} /> */}
               </div>
 
               <MagicButton
