@@ -30,8 +30,8 @@ const InfiniteMovingCards = ({
   useEffect(() => {
     addAnimation();
   }, []);
-  const [click, setClick] = useState<boolean>(false);
 
+  const [click, setClick] = useState<boolean>(false);
   const [start, setStart] = useState(false);
 
   function addAnimation() {
@@ -56,12 +56,12 @@ const InfiniteMovingCards = ({
       if (direction === "left") {
         containerRef.current.style.setProperty(
           "--animation-direction",
-          "forwards"
+          "forwards",
         );
       } else {
         containerRef.current.style.setProperty(
           "--animation-direction",
-          "reverse"
+          "reverse",
         );
       }
     }
@@ -84,7 +84,7 @@ const InfiniteMovingCards = ({
       ref={containerRef}
       className={cn(
         "overflow-hidden  scroller relative z-20 max-w-7xl [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
-        className
+        className,
       )}
     >
       <ul
@@ -92,12 +92,13 @@ const InfiniteMovingCards = ({
         className={cn(
           "relative flex  min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap z-30",
           start && "animate-scroll",
-          pauseOnHover && "hover:[animation-play-state:paused]"
+          pauseOnHover && "hover:[animation-play-state:paused]",
         )}
       >
         {items.map((item) => (
           <li
-            className="w-[300px] md:w-[350px] lg:w-[400px] xl:w-[450px] max-w-full relative rounded-3xl border border-b-0 flex-shrink-0 px-4 pt-6 md:px-6 lg:px-8"
+            // FIXED: Changed hardcoded w-[300px] to w-[85vw] for mobile safety
+            className="w-[85vw] max-w-[350px] sm:w-[350px] md:w-[400px] lg:w-[450px] relative rounded-3xl border border-b-0 flex-shrink-0 px-4 pt-6 md:px-6 lg:px-8"
             style={{
               background:
                 "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
@@ -123,15 +124,15 @@ const InfiniteMovingCards = ({
                 alt={item.img}
                 className="object-cover object-center pb-6 w-full h-40 md:h-48 lg:h-56 xl:h-64"
               />
-              <span className="relative z-20 text-2xl leading-[1.6] text-gray-100 font-bold pt-4 bg-gradient-to-r from-slate-600 to-indigo-300 bg-clip-text text-transparent">
+              <span className="relative z-20 text-xl md:text-2xl leading-[1.6] text-gray-100 font-bold pt-4 bg-gradient-to-r from-slate-600 to-indigo-300 bg-clip-text text-transparent">
                 {item.ProjectName}
               </span>
-              <div className="relative z-20 mt-6 flex flex-row items-center mb-8">
+              <div className="relative z-20 mt-4 md:mt-6 flex flex-row items-center mb-8">
                 <span className="flex flex-col gap-1">
-                  <span className="text-sm leading-[1.6] font-bold mt-2 bg-gradient-to-r from-indigo-200 to-slate-500 bg-clip-text text-transparent">
+                  <span className="text-xs md:text-sm leading-[1.6] font-bold mt-2 bg-gradient-to-r from-indigo-200 to-slate-500 bg-clip-text text-transparent">
                     {item.Details}
                   </span>
-                  <span className="text-sm leading-[1.6] mt-4 font-bold bg-gradient-to-r from-purple to-indigo-300 bg-clip-text text-transparent">
+                  <span className="text-xs md:text-sm leading-[1.6] mt-4 font-bold bg-gradient-to-r from-purple to-indigo-300 bg-clip-text text-transparent">
                     Technology Used <br />
                     {item.TechnologyUsed}
                   </span>
