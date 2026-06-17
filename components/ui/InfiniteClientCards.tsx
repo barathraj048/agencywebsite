@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import React, { useEffect, useRef, useState } from "react";
+import { Logo3DCard } from "./Logo3DCard";
 
 export const InfiniteClientCards = ({
   items,
@@ -33,29 +34,20 @@ export const InfiniteClientCards = ({
 
   const getDirection = () => {
     if (containerRef.current) {
-      if (direction === "left") {
-        containerRef.current.style.setProperty(
-          "--animation-direction",
-          "forwards",
-        );
-      } else {
-        containerRef.current.style.setProperty(
-          "--animation-direction",
-          "reverse",
-        );
-      }
+      containerRef.current.style.setProperty(
+        "--animation-direction",
+        direction === "left" ? "forwards" : "reverse",
+      );
     }
   };
 
   const getSpeed = () => {
     if (containerRef.current) {
-      if (speed === "fast") {
-        containerRef.current.style.setProperty("--animation-duration", "20s");
-      } else if (speed === "normal") {
-        containerRef.current.style.setProperty("--animation-duration", "40s");
-      } else {
-        containerRef.current.style.setProperty("--animation-duration", "80s");
-      }
+      const durations = { fast: "20s", normal: "40s", slow: "80s" };
+      containerRef.current.style.setProperty(
+        "--animation-duration",
+        durations[speed],
+      );
     }
   };
 
@@ -77,33 +69,37 @@ export const InfiniteClientCards = ({
         )}
       >
         {duplicatedItems.map((item, idx) => {
-          const isActive = activeClient === `${item.clientName}-${idx}`;
+          const key = `${item.clientName}-${idx}`;
+          const isActive = activeClient === key;
 
           return (
             <li
-              key={`${item.clientName}-${idx}`}
-              onClick={() =>
-                setActiveClient(isActive ? null : `${item.clientName}-${idx}`)
-              }
+              key={key}
+              onClick={() => setActiveClient(isActive ? null : key)}
               onMouseLeave={() => setActiveClient(null)}
-              // FIXED: Changed from gray to the deep glossy navy to match your screenshot
-              className="group relative w-[150px] h-[100px] sm:w-[200px] sm:h-[120px] md:w-[250px] md:h-[150px] flex-shrink-0 cursor-pointer rounded-2xl flex items-center justify-center transition-all duration-300 hover:bg-white/5 bg-[#0C0E23]/60 border border-[#1F223C] hover:shadow-lg overflow-hidden backdrop-blur-sm"
+              className={cn(
+                "group relative w-[150px] h-[100px] sm:w-[200px] sm:h-[120px] md:w-[250px] md:h-[150px]",
+                "flex-shrink-0 cursor-pointer rounded-2xl overflow-hidden",
+                "bg-[#0C0E23]/60 border border-[#1F223C] backdrop-blur-sm",
+                "transition-all duration-300",
+                // Glow ring on hover
+                "hover:border-blue-500/40 hover:shadow-[0_0_24px_4px_rgba(99,102,241,0.18)]",
+              )}
             >
-              {/* Logo Background */}
-              <img
+              {/* Three.js 3D Logo */}
+              <Logo3DCard
                 src={item.logo}
                 alt={item.clientName}
-                className={cn(
-                  "object-contain w-3/5 rounded-3xl h-3/5 transition-all duration-500 ease-in-out filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110",
-                  isActive && "grayscale-0 opacity-20 scale-110 blur-md",
-                )}
+                isActive={isActive}
               />
 
-              {/* Glossy Overlay Container */}
+              {/* Info Overlay (click-activated) */}
               <div
                 className={cn(
-                  "absolute inset-0 z-50 flex flex-col items-center justify-center p-3 md:p-5 text-center rounded-2xl transition-all duration-300 ease-out",
-                  "bg-[#0C0E23]/80 backdrop-blur-xl border border-white/10 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)]",
+                  "absolute inset-0 z-50 flex flex-col items-center justify-center p-3 md:p-5 text-center rounded-2xl",
+                  "transition-all duration-300 ease-out",
+                  "bg-[#0C0E23]/85 backdrop-blur-xl border border-white/10",
+                  "shadow-[inset_0_1px_1px_rgba(255,255,255,0.08)]",
                   isActive
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-4 pointer-events-none",

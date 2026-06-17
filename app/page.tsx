@@ -11,6 +11,7 @@ import PrevWork from "@/components/Prevwork";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import Comparition from "@/components/Comparition";
 import ClientLogo from "@/components/ClientLogo";
+import ClientSection from "@/components/ClientList";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <FloatingNav navItems={navItems} />
         <Hero />
         <ClientLogo />
+        <ClientSection />
         <Grid />
         <PrevWork />
         <Comparition />
