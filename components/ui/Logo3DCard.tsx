@@ -236,7 +236,6 @@ export const Logo3DCard: React.FC<Logo3DCardProps> = ({
     const mat = mesh.material as THREE.MeshStandardMaterial;
 
     if (isActive) {
-      // Full desaturation for active (info overlay state)
       gsap.to(mat.color, { r: 0.5, g: 0.5, b: 0.5, duration: 0.3 });
       gsap.to(mesh.scale, {
         x: mesh.userData.baseScaleX ?? 1,
