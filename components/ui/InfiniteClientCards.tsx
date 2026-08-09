@@ -163,7 +163,6 @@ export default function ClientSection() {
       logo: "/logos/keerthana.jpg",
       info: "Local business branding, photography, and social media outreach.",
     },
-    // REMOVED: Venus Construction because venus.png does not exist in your public folder.
     {
       clientName: "Value Plus",
       logo: "/logos/valueplus.jpeg",

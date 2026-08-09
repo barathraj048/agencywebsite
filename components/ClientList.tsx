@@ -43,11 +43,6 @@ function ClientSection() {
       info: "Local business branding, photography, and social media outreach.",
     },
     {
-      clientName: "Venus Construction",
-      logo: "/logos/venus.png",
-      info: "Corporate identity design and digital portfolio showcase.",
-    },
-    {
       clientName: "Value Plus",
       logo: "/logos/valueplus.jpeg",
       info: "Strategic digital marketing and brand positioning.",
