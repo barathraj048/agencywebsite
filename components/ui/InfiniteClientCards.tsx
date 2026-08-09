@@ -87,7 +87,7 @@ export const InfiniteClientCards = ({
                 "hover:border-blue-500/40 hover:shadow-[0_0_24px_4px_rgba(99,102,241,0.18)]",
               )}
             >
-              {/* Three.js 3D Logo */}
+              {/* Client logo */}
               <Logo3DCard
                 src={item.logo}
                 alt={item.clientName}
@@ -125,62 +125,52 @@ export default function ClientSection() {
   const clients = [
     {
       clientName: "TVK Election Campaign (2026)",
-      logo: "/logos/tvk.jpg",
+      logo: "/logos/WhatsApp Image 2026-08-09 at 4.45.55 PM.jpeg",
       info: "Complete video production and strategic social media management for the Pollachi region.",
     },
     {
       clientName: "INRC",
-      logo: "/logos/inrc.png",
+      logo: "/logos/INRC.png",
       info: "Comprehensive event coverage and media production.",
     },
     {
       clientName: "Coimbatore Auto Sports Club",
-      logo: "/logos/casc.png",
+      logo: "/logos/Coimbatore Auto Sports Club .png",
       info: "Digital media and branding partner for regional motorsports events.",
     },
     {
       clientName: "Pollachi Motorable Club (PMC)",
-      logo: "/logos/pmc.jpg",
+      logo: "/logos/PMC logo .png",
       info: "Creative media production and digital presence enhancement.",
     },
     {
-      clientName: "SriVaru Motors",
-      logo: "/logos/srivaru.png",
-      info: "End-to-end media coverage and marketing for their Grand Product Launch Event.",
-    },
-    {
       clientName: "High Key Restobar",
-      logo: "/logos/highkey.png",
+      logo: "/logos/High key Logo .png",
       info: "Social media marketing and visually engaging content creation.",
     },
     {
       clientName: "Planeta",
-      logo: "/logos/planeta.jpg",
+      logo: "/logos/Planeta Logo .png",
       info: "Digital branding and promotional campaign management.",
     },
     {
       clientName: "Keerthana Mess",
-      logo: "/logos/keerthana.jpg",
+      logo: "/logos/Keerthana mess logo .png",
       info: "Local business branding, photography, and social media outreach.",
     },
     {
-      clientName: "Value Plus",
-      logo: "/logos/valueplus.jpeg",
-      info: "Strategic digital marketing and brand positioning.",
-    },
-    {
       clientName: "Brahma Tours and Travels",
-      logo: "/logos/brahma.jpeg",
+      logo: "/logos/Brahma Tours and Travels .png",
       info: "Travel package promotions and creative content management.",
     },
     {
       clientName: "Midland Residency",
-      logo: "/logos/midland.jpg",
+      logo: "/logos/Midland Residency .png",
       info: "Hospitality marketing and premium visual branding.",
     },
     {
       clientName: "Evara Resort",
-      logo: "/logos/evara.jpg",
+      logo: "/logos/Evara Logo 16 9 .jpeg",
       info: "Premium resort videography and social media engagement.",
     },
   ];

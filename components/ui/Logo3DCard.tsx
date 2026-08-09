@@ -19,7 +19,7 @@ export const Logo3DCard: React.FC<Logo3DCardProps> = ({
   return (
     <div
       className={cn(
-        "relative flex h-full w-full items-center justify-center p-5",
+        "relative flex h-full w-full items-center justify-center overflow-hidden",
         "[perspective:900px]",
       )}
       aria-label={alt}
@@ -36,7 +36,7 @@ export const Logo3DCard: React.FC<Logo3DCardProps> = ({
           decoding="async"
           onError={() => setHasError(true)}
           className={cn(
-            "max-h-[72%] max-w-[78%] object-contain",
+            "h-full w-full object-cover",
             "transition duration-300 ease-out [transform-style:preserve-3d]",
             "drop-shadow-[0_14px_18px_rgba(0,0,0,0.35)]",
             "group-hover:scale-110 group-hover:[transform:translateZ(42px)_rotateX(8deg)_rotateY(-10deg)]",
