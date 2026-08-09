@@ -24,7 +24,7 @@ const Home = () => {
         <ClientSection />
         <UpcomingProjectsSection />
         <Grid />
-        <PrevWork />
+        {/* <PrevWork /> */}
         <Comparition />
         <Clients />
         <Approach />
